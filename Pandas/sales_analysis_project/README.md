@@ -18,26 +18,6 @@ Step	         Description
 3. Validate	     Check for missing, duplicate, or negative values to ensure data integrity.
 4. Load	         Save the cleaned and merged dataset to /data/processed/merged_sales.csv.
 5. Visualize	 Generate a bar chart comparing monthly sales by store, saved as /outputs/sales_report.png.
-   
-Project Structure
-sales_analysis_project/
-│
-├── data/
-│   ├── raw/                     # Original CSV data sources
-│   └── processed/               # Clean and merged datasets
-│
-├── notebooks/
-│   └── sales_analysis.ipynb     # Main Jupyter Notebook with analysis steps
-│
-├── src/
-│   ├── etl_pipeline.py          # ETL functions (extract, transform, load)
-│   └── utils.py                 # Validation and visualization utilities
-│
-├── outputs/
-│   ├── sales_report.png         # Visualization output
-│   └── monthly_summary.csv      # Aggregated metrics
-│
-└── README.md                    # Project documentation
 
 Technologies Used
 
