@@ -21,9 +21,9 @@ def validate_data(df):
     - Duplicate rows
     - Invalid numeric values
     """
-    print("🔍 Missing values:\n", df.isnull().sum())
-    print("🧮 Duplicates:", df.duplicated().sum())
-    print("❌ Invalid values:", ((df['cantidad'] <= 0) | (df['precio_unitario'] <= 0)).sum())
+    print("Missing values:\n", df.isnull().sum())
+    print("Duplicates:", df.duplicated().sum())
+    print("Invalid values:", ((df['cantidad'] <= 0) | (df['precio_unitario'] <= 0)).sum())
 
 
 # REPORTING
@@ -52,4 +52,4 @@ def generate_sales_report(df, output_folder="../outputs/"):
     plt.savefig(output_path)
     plt.close()
 
-    print(f"📊 Sales report saved successfully at: {output_path}")
+    print(f"Sales report saved successfully at: {output_path}")
